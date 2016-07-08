@@ -8,6 +8,7 @@ If you ever used Brett DeWoody's EE Hacksaw, then you were probably sad to see i
 All of the functionality remains the same as it did with the older versions in EE2.
 
 Chopper takes your entry's content and whittles it down to a more manageable size. It strips the HTML and limits the excerpts by character count, word count or cutoff marker.
+
 To use Chopper simply wrap the content you want to truncate with the exp:chopper tag, like this:
 <pre><code>&#123;exp:chopper&#125;
    &#123;your_content&#125;
@@ -20,7 +21,7 @@ chars   = ""     // Limit by number of characters
 words   = ""     // Limit by number of words
 cutoff = ""      // Limit by a specific cutoff string
 append = ""      // String to append to the end of the excerpt
-allow   = ""     // HTML tags you want to allow. Ex allow="<b><a>"
+allow   = ""     // HTML tags you want to allow. Ex allow="<code>&lt;b&gt;&lt;a&gt;</code>"
 
 For example, if you want to limit your excerpt to 100 words you would do this:
 
