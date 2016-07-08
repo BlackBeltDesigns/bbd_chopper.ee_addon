@@ -3,6 +3,8 @@ A Build of the old Hacksaw plugin for EE3 since it was let go.
 
 <a href='https://pledgie.com/campaigns/32205'><img alt='Click here to lend your support to: ExpressionEngine Chopper Addon and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/32205.png?skin_name=chrome' border='0' ></a>
 
+![BBD CHOPPER](https://pledgie.com/assets/campaigns/32205/medium/Chopper.jpg?1467994054 "BBD CHOPPER")
+
 If you ever used Brett DeWoody's EE Hacksaw, then you were probably sad to see it was labeled INACTIVE. I know I was. That's why I revived it in an ExpressionEngine 3 friendly version.
 
 All of the functionality remains the same as it did with the older versions in EE2.
