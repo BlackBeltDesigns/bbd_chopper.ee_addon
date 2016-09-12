@@ -7,6 +7,6 @@ return array(
     'docs_url' => 'https://github.com/BlackBeltDesigns/bbd_chopper.ee_addon',
     'name' => 'BBD Chopper',
     'settings_exist' => false,
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'namespace'   => 'BBDOKC\Chopper'
 );

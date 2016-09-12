@@ -12,7 +12,7 @@
 class Chopper {
 
     public static $name         = 'BBD Chopper';
-    public static $version      = '1.0';
+    public static $version      = '1.0.1';
     public static $author       = 'Brian Mallett';
     public static $author_url   = 'http://bbdokc.com';
     public static $description  = 'Allows you to create excerpts of your entries by removing HTML tags and limited the excerpt by character count, word count or a specific marker you insert into your content.';
@@ -54,6 +54,10 @@ class Chopper {
         } elseif (isset($chars) && $chars != "") {
             // Strip the HTML
             $stripped_content = strip_tags($tag_content, $allow);
+
+            echo strlen($stripped_content);
+
+
             $new_content = (strlen($stripped_content) <= $chars ? $stripped_content : $this->_truncate_chars($stripped_content, $chars_start, $chars, $append));
         } elseif (isset($words) && $words != "") {
             // Strip the HTML
@@ -83,7 +87,7 @@ class Chopper {
     // Helper Function - Truncate by Character Limit
     public function _truncate_chars($content, $chars_start, $limit, $append) {
         // Removing the below to see how it effect UTF-8.
-        $content = preg_replace('/\s+?(\S+)?$/', '', substr($content, $chars_start, ($limit+1))) . $append;
+        $content = preg_replace('/\s+?(\S+)?$/', '', substr($content, $chars_start, ($limit))) . $append;
         return $content;
     }
 
