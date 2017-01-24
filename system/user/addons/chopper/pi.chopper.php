@@ -54,10 +54,6 @@ class Chopper {
         } elseif (isset($chars) && $chars != "") {
             // Strip the HTML
             $stripped_content = strip_tags($tag_content, $allow);
-
-            echo strlen($stripped_content);
-
-
             $new_content = (strlen($stripped_content) <= $chars ? $stripped_content : $this->_truncate_chars($stripped_content, $chars_start, $chars, $append));
         } elseif (isset($words) && $words != "") {
             // Strip the HTML
